@@ -1,0 +1,143 @@
+.footer {
+  background-color: #ececec1c;
+  color: #000000;
+  padding: 2rem 2rem;
+  font-family: Arial, sans-serif;
+  margin-top: 5vh;
+  padding-left: 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  color: #ff7a00;
+  margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section ul li {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ff7a00;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.footer-links a {
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.form{
+  input, textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+  }
+  input{
+    height: 20px;
+  }
+  textarea{
+    height: 50px;
+  }
+}
+.sendbut{
+  background:none;
+  background-color: #ff5722;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+.sendbut:hover{
+  background-color: white;
+  border: 2px solid #ff5722;
+  color: #ff5722;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links a {
+    margin: 0.5rem 0;
+  }
+  .footer-logo{
+    font-size: 30px;
+  }
+}

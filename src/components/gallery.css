@@ -1,0 +1,151 @@
+
+.container{
+  text-align: left;
+  width: 95%;
+  height: 130vh;
+}
+.header{
+  margin-left:5%;
+  text-align: left;
+}
+.header h1 {
+    font-size: 3vw;
+    color: rgb(63, 59, 59);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.header p {
+  font-size: 1vw;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.explore-button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.explore-button:hover {
+  background-color: #e64a19;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-top: -10vh;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 15vw;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.img-container{
+  width: 18vw;
+}
+#image-container-1{
+  margin-top: 30vh;
+}
+#image-container-2{
+  margin-top: 10vh;
+}
+#image-container-4{
+  margin-top: 20vh;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1);
+}
+
+.overlay {
+  position: absolute;
+  margin-top: 5px;
+  width: 100%;
+  height: 98%;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay-content {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+}
+.gal-sub-head{
+  margin-left: 80px;
+}
+.header{
+  p{
+    width: 50vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: left;
+    margin: 0;
+    padding: 10px;
+    h1{
+      text-align: center;
+      font-size: 30px;
+    }
+    p{
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+  .image-grid{
+    margin-top: 5vh;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+  .img-container{
+    width: 70vw;
+    margin-top: 0;
+    img{
+      margin: 0;
+    }
+  }
+  #image-container-1, #image-container-2, #image-container-4{
+    margin:0;
+  }
+  .header p{
+    width: auto;
+  }
+}
